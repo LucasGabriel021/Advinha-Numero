@@ -11,6 +11,7 @@ recognition.addEventListener('result', onSpeak);
 function onSpeak(event) {
      let chute = console.log(event.results[0][0].transcript);
      exibeChutenaTela(chute);
+     verificaValorValido(chute);
 }
 
 function exibeChutenaTela(chute) {
